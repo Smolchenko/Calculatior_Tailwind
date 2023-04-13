@@ -3,30 +3,14 @@
 @tailwind utilities;
 
 @layer components {
-  /* .btn-yellow {
-    @apply bg-yellow-100 shadow-md rounded-2xl w-12 h-12 text-yellow-600 font-medium flex justify-center items-center;
-  }
-  .btn-orange {
-    @apply bg-yellow-500 shadow-md rounded-2xl w-12 h-12 text-white font-medium text-xl flex justify-center items-center;
-  }
-  .btn-grey {
-    @apply bg-gray-200 shadow-md rounded-2xl w-12 h-12 text-black font-medium flex justify-center items-center;
-  }
-  .btn-green {
-    @apply bg-green-500 shadow-md rounded-2xl w-12 h-12 text-white font-medium text-xl flex justify-center items-center;
-  }
-  .btn-grey-jumbo {
-    @apply bg-gray-200 shadow-md rounded-2xl w-full h-12 text-black font-medium flex justify-center items-center;
-  } */
-
   .btn-command {
     @apply px-5 py-3 bg-color3 hover:bg-color4 font-bold text-lg rounded-lg shadow-sm focus:outline-none flex justify-center items-center w-12 h-12;
   }
 
   .btn-number {
-    /* @apply bg-gray-500 shadow-md rounded-2xl w-12 h-12 text-white font-medium text-xl flex justify-center items-center; */
     @apply px-5 py-3 bg-color2 hover:bg-color1 font-bold text-lg rounded-lg shadow-sm focus:outline-none flex justify-center items-center w-12 h-12;
   }
+
   .btn-zero {
     @apply px-5 py-3 bg-color2 hover:bg-color1 font-bold text-lg rounded-lg shadow-sm focus:outline-none flex justify-center items-center w-full h-12;
   }

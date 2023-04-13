@@ -17,4 +17,7 @@ Created and updated tailwind.config.js, index.css, index.html
 Imported index.css in App.js and index.js
 Opened terminal and ran: npx tailwindcss -i ./src/index.css -o ./dist/output.css --watch
 
+npm install mathjs
+
+
 
