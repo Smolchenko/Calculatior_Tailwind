@@ -1,0 +1,20 @@
+Calculator: 
+Build a calculator app that can perform basic arithmetic 
+operations such as addition, subtraction, multiplication, 
+and division. 
+You can use React components to create the buttons and 
+display the results.
+
+
+Using tailwindCSS. https://tailwindcss.com/docs/installation
+Installed -
+    tailwindcss@latest
+    @heroicons/react
+    @headlessui/react
+    font - <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+ 
+Created and updated tailwind.config.js, index.css, index.html
+Imported index.css in App.js and index.js
+Opened terminal and ran: npx tailwindcss -i ./src/index.css -o ./dist/output.css --watch
+
+
