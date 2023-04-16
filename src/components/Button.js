@@ -1,31 +1,32 @@
 import { useState, useEffect } from "react";
 
-const Button = ({ content, className, onClick }) => {
+const Button = ({ content, className = "", onClick, prevKey }) => {
   const [isActive, setIsActive] = useState(false);
   const textIsNum = !isNaN(content);
+  // const invalidKey = (isNaN(prevKey) || prevKey === "start") && !textIsNum;
+  const invalidKey = prevKey === "start" && !textIsNum;
 
   const handleOnClick = (e) => {
     setIsActive(true);
-    // onClick && onClick(e);
+    onClick && onClick(e.target.innerText);
   };
 
   useEffect(() => {
     if (isActive) {
       const timeout = setTimeout(() => {
         setIsActive(false);
-      }, 100);
+      }, 50);
       return () => clearTimeout(timeout);
     }
   }, [isActive]);
 
   return (
     <button
-      className={`
-        ${className} 
-        ${textIsNum ? "btn-number" : "btn-command"}
-        ${isActive && "bg-customHover transform translate-y-0.5 shadow-none"}
-      `}
       onClick={handleOnClick}
+      disabled={invalidKey}
+      className={`${textIsNum ? "btn-number" : "btn-command"} ${
+        isActive && "transform translate-y-0.5 shadow-none"
+      } ${className}`}
     >
       {content}
     </button>
