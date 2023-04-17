@@ -20,4 +20,7 @@ Opened terminal and ran: npx tailwindcss -i ./src/index.css -o ./dist/output.css
 npm install mathjs
 
 
+LEFT TO DO -
+with big result numbers, either fix the useEffect or use the Textfit - left comments.
+
 
